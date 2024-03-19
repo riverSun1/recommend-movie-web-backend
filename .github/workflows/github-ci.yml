@@ -1,5 +1,9 @@
 image: python:3.9
 
+on:
+  release:
+    types: [created]
+
 variables:
   IMAGE_VERSION: v1.0.0
   WORK_DIR: .
