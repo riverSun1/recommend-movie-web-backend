@@ -1,17 +1,5 @@
 image: python:3.9
 
-on:
-  release:
-    types: [created]
-
-jobs:
-  build:
-
-    runs-on: ubuntu-latest   # 이 부분에서 runner의 Label이 기입된다.
-    permissions:
-      contents: read
-      packages: write
-
 variables:
   IMAGE_VERSION: v1.0.0
   WORK_DIR: .
