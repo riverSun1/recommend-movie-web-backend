@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 from tqdm import tqdm
 import os
+import time
 
 def add_url(row):
     return f"http://www.imdb.com/title/tt{row}/"
